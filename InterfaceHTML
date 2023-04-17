@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Registro</title>
+</head>
+<body>
+  <h1>Formulário de Registro</h1>
+  <form>
+    <label for="numero_processo">Número do Processo:</label>
+    <input type="text" id="numero_processo" name="numero_processo" required><br>
+
+    <label for="tipo_procedimento">Tipo de Procedimento:</label>
+    <input type="text" id="tipo_procedimento" name="tipo_procedimento" required><br>
+
+    <label for="pje">PJE:</label>
+    <input type="text" id="pje" name="pje" required><br>
+
+    <label for="processo_sei">Processo SEI:</label>
+    <input type="text" id="processo_sei" name="processo_sei" required><br>
+
+    <label for="encarregado">Encarregado:</label>
+    <input type="text" id="encarregado" name="encarregado" required><br>
+
+    <label for="acusado">Acusado:</label>
+    <input type="text" id="acusado" name="acusado" required><br>
+
+    <label for="escrivao">Escrivão:</label>
+    <input type="text" id="escrivao" name="escrivao" required><br>
+
+    <label for="defensor_dativo">Defensor Dativo:</label>
+    <input type="text" id="defensor_dativo" name="defensor_dativo" required><br>
+
+    <label for="origem">Origem:</label>
+    <input type="text" id="origem" name="origem" required><br>
+
+    <label for="data_inicio">Data de Início:</label>
+    <input type="date" id="data_inicio" name="data_inicio" required><br>
+
+    <label for="prazo_final">Prazo Final:</label>
+    <input type="date" id="prazo_final" name="prazo_final" required><br>
+
+    <label for="prorrogacao">Prorrogação (quantidade de dias):</label>
+    <input type="number" id="prorrogacao" name="prorrogacao" min="0" max="365" required><br>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+      <option value="">Selecione</option>
+      <option value="em_andamento">Em andamento</option>
+      <option value="concluido">Concluído</option>
+      <option value="arquivado">Arquivado</option>
+    </select><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
